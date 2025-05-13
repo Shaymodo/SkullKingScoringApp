@@ -3,8 +3,8 @@ import { StyleSheet } from "react-native";
 
 import { Text, View } from "./Themed";
 
-export default function ScoreBlock(){
+export default function ScoreBlock({ player }: { player: string }) {
     return(
-        <View>Testing</View>
+        <Text>Testing</Text>
     );
 }
