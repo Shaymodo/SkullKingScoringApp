@@ -5,6 +5,6 @@ import { Text, View } from "./Themed";
 
 export default function ScoreBlock({ player }: { player: string }) {
     return(
-        <Text>Testing</Text>
+        <Text>This is a ScoreBlock</Text>
     );
 }
