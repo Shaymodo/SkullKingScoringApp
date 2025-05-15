@@ -12,19 +12,16 @@ export default function TabTwoScreen() {
   );
 }
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
+
+  //flexbox or grid layout
+  //flexbox if I can do a stack of 10 rows for each player, and it adds a column for each subsequent player
+  //eventually have an advanced setting for variable round count or tricks per round
 });
