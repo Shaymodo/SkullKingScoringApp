@@ -1,21 +1,25 @@
-import React from "react";
+import { View } from "./Themed";
 import { StyleSheet } from "react-native";
+import MakeScoreCell from './ScoringCell';
 
-import { Text, View } from "./Themed";
-
-export default function ScoreBlock({ player }: { player: string }) {
-    return(
+export default function MakePlayerScoreBlock( player: string, roundCount: number) {
+    let scoreCells = [];
+    for (let i = 0; i < roundCount; i++) {
+        scoreCells.push(<MakeScoreCell/>)
+    }
+    
+    return (
         <View style={[styles.container]}>
-            <View>
-                <Text>This is a ScoreBlock</Text>
-            </View>
-        </View>
+            <MakeScoreCell/>
+            <MakeScoreCell/>
+            <MakeScoreCell/>
+        </View> 
     );
+
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 20,
     },
 });

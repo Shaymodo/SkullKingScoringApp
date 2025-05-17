@@ -2,12 +2,13 @@ import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
-import ScoreBlock from '@/components/ScoringBlock';
+
+import MakePlayerScoreBlock from '@/components/ScoringBlock';
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <ScoreBlock player="PlayerOne"/>
+      
     </View>
   );
 }
@@ -19,6 +20,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
+
+    margin: 10,
   },
 
   //flexbox or grid layout
